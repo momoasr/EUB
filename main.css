@@ -16,7 +16,8 @@ body{
     color: black;
 }
 
-.div-2{
+.div-1 .div-2{
+    position: absolute;
     width: 80rem;
     border:lpx solid #333;
     align-items: center;
@@ -24,6 +25,9 @@ body{
     box-shadow: 8px 8px 5px #444;
     padding: 8px 12px;
     background-color: rgb(224, 220, 220);
+    top: 40%;
+    left: 15%;
+    text-align: center;
 }
 
 .navbar{
@@ -142,3 +146,65 @@ body{
     top: -10px;
     bottom: -10px;
 }
+
+.div-3 {
+    position:relative;
+    width: 100%;
+}
+
+.div-3 .first-slide {
+    width: 100%;
+    background-color: hsla(43, 14%, 74%, 0.539);
+}
+
+.div-3 .third-slide {
+    width: 100%;
+    background-color: hsla(43, 14%, 74%, 0.539);
+}
+
+.div-3 .first-slide .display-image{
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 2%;
+   
+}
+
+.div-3 .second-slide .display-image {
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 48%;
+}
+
+.div-3 .third-slide .display-image {
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 2%;
+    
+}
+
+.div-3 .first-slide .message-1 {
+    
+
+}
+
+/* Styles for mobile and tablets*/
+@media (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none!important;
+    }
+    
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
+
